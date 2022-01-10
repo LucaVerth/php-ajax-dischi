@@ -1,0 +1,74 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
+/* header section */
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80px;
+  background-color: #2e3a46;
+}
+header .logo{
+  width: 80px;
+  padding-left: 10px;
+}
+header .logo img{
+  max-width: 100%;
+}
+
+header .select {
+  padding-right: 10px;
+}
+
+/* Main section */
+main{
+  min-height: calc(100vh - 80px);
+  padding: 3rem 0;
+  background-color: #1e2d3b;
+}
+.main-album-wrapper{
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  width: 80%;
+  /* min-height: 600px; */
+  margin: 0 auto;
+}
+
+/* card styles */
+.card{
+  min-height: 300px;
+  background-color: #2e3a46;
+}
+.album-card{
+  display: flex;
+  flex-direction:column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 15px;
+  cursor: pointer;
+}
+.album-cover{
+  margin: 10px;
+}
+.album-cover img{
+  max-width: 100%;
+}
+.album-card h5{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-top: 1.2rem;
+}
+.album-card span{
+  margin: 0.3rem;
+  color: grey;
+}
